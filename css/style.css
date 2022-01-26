@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Syne-Regular";
+  src: url("https://heycoolkid.pt/fonts/Syne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SyneMono-Regular";
+  src: url("https://heycoolkid.pt/fonts/SyneMono-Regular.ttf")
+    format("truetype");
+  src: url("https://heycoolkid.pt/fonts/SyneMono-Regular.woff") format("woff");
+}
+
+body {
+  background-image: url(https://heycoolkid.pt/img/bgDesktop.jpg);
+  background-size: cover;
+}
+
+.tooltippers {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: -30px;
+  opacity: 0;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltipTop {
+  top: -20px;
+  /* visibility: hidden; */
+}
+
+.tooltipBot {
+  bottom: -40px;
+}
+
+.textGet {
+  font-family: "Syne-Regular", sans-serif;
+  position: absolute;
+  left: 15%;
+  top: 0;
+}
+
+.mainContainer {
+  transition: 300ms linear all;
+}
+
+.mailGet {
+  width: fit-content;
+  font-family: "Syne-Regular", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.mailGet .eachMail span {
+  font-family: "SyneMono-Regular", sans-serif;
+}
+
+.mailGet .eachMail {
+  padding: 10px;
+  width: fit-content;
+  padding-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.mailGet .eachMail:nth-child(1) {
+  background: linear-gradient(180deg, transparent 35%, #ffff00 35%);
+}
+
+.mailGet .eachMail:nth-child(1):hover {
+  color: #ffff00;
+  background: linear-gradient(180deg, transparent 35%, #000 35%);
+}
+
+.mailGet .eachMail:nth-child(2) {
+  background: linear-gradient(180deg, transparent 35%, #dd00ed 35%);
+  margin-top: -15px;
+}
+
+.mailGet .eachMail:nth-child(2):hover {
+  color: #dd00ed;
+  background: linear-gradient(180deg, transparent 35%, #000 35%);
+}
+
+.infoImg {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.logoHCK {
+  width: 100%;
+  display: block;
+  padding-top: 20%;
+}
+
+.getInside {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+}
+
+.infoHCK {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoHCK {
+    left: 5%;
+    width: 90%;
+    top: auto;
+    padding-top: 45%;
+    position: fixed;
+  }
+
+  body {
+    background-image: url(https://heycoolkid.pt/img/bgMobile.jpg);
+  }
+
+  .infoImg {
+    transform: none;
+    width: 100%;
+  }
+
+  .mailGet {
+    right: auto;
+    left: 10px;
+    bottom: 10%;
+    position: absolute;
+    font-size: 20px;
+  }
+
+  .mailGet .eachMail:nth-child(2) {
+    margin-top: -5px;
+  }
+
+  .tooltippers {
+    left: 0;
+  }
+  .getInside {
+    width: 60%;
+    right: 5%;
+    position: fixed;
+    top: 45%;
+    left: auto;
+  }
+
+  .infoHCK {
+    flex-direction: column;
+    bottom: 5%;
+    position: fixed;
+  }
+
+  .infoHCK .mailGet {
+    font-size: 20px;
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+
+  .infoHCK .textGet {
+    width: 80%;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+
+  .infoHCK .textGet img {
+    width: 100%;
+  }
+}
